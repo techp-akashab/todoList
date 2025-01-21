@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  #mainContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  #addTodoContainer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  #addTodoButton {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #addTodoButton:hover {
+    background-color: #000000;
+  }
+  
+  #tasksContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .taskContainer {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .taskContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .todoTitle {
+    font-size: 1.25rem;
+    color: #222;
+    margin: 0;
+  }
+  
+  .todoDescription {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .dueDate {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .High {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .Medium {
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .Low {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .todoNotes {
+    font-style: italic;
+    color: #444;
+  }
+  
+  .isComplete {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .editButton,
+  .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    margin: 0.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .editButton {
+    color: #333;
+  }
+  
+  .editButton:hover {
+    background-color: #e7f0fc;
+  }
+  
+  .deleteButton {
+    color: #dc3545;
+  }
+  
+  .deleteButton:hover {
+    background-color: #fdecea;
+  }
+  
+  .no-tasks-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+    margin-top: 2rem;
+  }
+  
+  dialog#add-task-dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+  }
+  .todoCheck{
+    margin-left: 12px;
+  }
+  .form-actions {
+    margin-bottom: 1rem;
+  }
+  
+  .form-actions label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  .form-actions input[type="text"],
+  .form-actions input[type="date"],
+  .form-actions input[type="radio"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="radio"] {
+    width: auto;
+  }
+  
+  #isComplete {
+    margin-left: 0.5rem;
+  }
+  
+  .form-buttons {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  button[type="reset"],
+  button[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button[type="reset"] {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  button[type="reset"]:hover {
+    background-color: #ddd;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #000000;
+  }
+  
